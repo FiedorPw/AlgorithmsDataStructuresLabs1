@@ -1,8 +1,12 @@
 package com.company;
 
+
+
 public class Palindrome {
-
-
+        /*
+        * Text of this palindrome.
+        */
+        private String palindrome = null;
 
         public static void main (String[] arguments) {
             String word = "abccba";
