@@ -9,6 +9,7 @@ public class Main {
         doubleOneCheck();
         fillingFirstRow();
         fillingSecondRow();
+        //wypisanie 
         for (int i = 0; i < c; i++) System.out.print(macierz[0][i] + " ");
         System.out.println();
         for (int i = 0; i < c; i++) System.out.print(macierz[1][i] + " ");
@@ -25,7 +26,7 @@ public class Main {
         }
     }
 
-    public static void fillingFirstRow() {
+    public static void fillingFirstRow() { //wypisuje jedynki od lewej w rzędzie zerowym
         for (int i = 0; i < c; i++) {
             if (firstRowSum > 0 && macierz[0][i] != 1){
                 firstRowSum--;
@@ -33,7 +34,7 @@ public class Main {
             }
         }
     }
-    public static void fillingSecondRow() {
+    public static void fillingSecondRow() { //wypisuje jedynki od prawej w rzędzie pierwszym
         for (int i = c-1; i > 0; i--) {
             if (secondRowSum > 0 && macierz[1][i] != 1){
                 secondRowSum--;
